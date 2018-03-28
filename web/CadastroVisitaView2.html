@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro de Visistante</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Materialize CSS -->
+        <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"/>
+    </head>
+    <body>
+        <div class="card-panel teal lighten-2 white-text">
+            <center>Cadastro Cliente</center>
+        </div>
+        <div class="row">
+            <form action="EnderecoVisitaCtrl" method="post" class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="first_name" type="text" name="rua" class="validate">
+                        <label>Rua</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" name="numero" class="validate">
+                        <label>Número</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input type="text" name="cpf" class="validate">
+                        <label>CEP</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input type="text" name="rg" class="validate">
+                        <label>Complemento</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Import JQuery before JS -->
+        <script type="text/javascript" src="materialize/JQuery/jquery-3.3.1.js"></script>
+        <!-- Materialize JS -->
+        <script src="materialize/js/materialize.min.js"></script>
+    </body>
+</html>
