@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro de Visistante</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Import Google Icon Font-->
+        <link href="materialize/Icons/icon.css" rel="stylesheet">
+        <!-- Materialize CSS -->
+        <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"/>
+    </head>
+    <body>
+        <div class="card-panel teal lighten-2 white-text">
+            <center>Cadastro Cliente</center>
+        </div>
+
+        <div class="row">
+            <form action="VisitaCtrl" method="post" class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="first_name" type="text" name="nome" class="validate">
+                        <label>Nome Completo</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" name="idade" class="validate">
+                        <label>Idade</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input type="text" name="cpf" class="validate">
+                        <label>CPF</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input type="text" name="rg" class="validate">
+                        <label>RG</label>
+                    </div>
+                    <div class='row'>
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Continuar
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Import JQuery before JS -->
+        <script type="text/javascript" src="materialize/JQuery/jquery-3.3.1.js"></script>
+        <!-- Materialize JS -->
+        <script src="materialize/js/materialize.min.js"></script>
+    </body>
+</html>
